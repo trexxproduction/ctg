@@ -90,7 +90,7 @@ doctype html>
       document.getElementById('closeModal').onclick = () => modal.classList.remove('open');
       modal.onclick = event => { if (event.target === modal) modal.classList.remove('open'); };
       document.querySelectorAll('.select-ticket').forEach(button => button.onclick = () => { document.getElementById('ticketType').value = button.dataset.ticket; document.getElementById('registrationForm').scrollIntoView({ behavior:'smooth', block:'center' }); });
-      const registrationEndpoint = 'https://script.google.com/macros/s/AKfycbz6Z041pKHVSftH1lfA76J5Pjuu_NsqmqwR81xCUftSPS2WlsI0oQDI0oMqxIMcdIMz/exec';
+      const registrationEndpoint = 'https://script.google.com/macros/s/AKfycbztd7J3BeVIhm25lUxu2hdAbvvoEusvnZ-TVn7mv1U5lLM0bfcKbf-YIjIKujbYGDxw/exec';
       document.getElementById('registrationForm').onsubmit = event => {
         event.preventDefault();
         const form = event.currentTarget;
